@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+/* SET UP */
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  /* Put website into display mode */
+  display: grid; 
+
+  /*Define columns, the number in front fr = lenght of column, while number of fr = number of columns */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(5, 1fr);
+
+  column-gap: 10px;
+
+  row-gap: 10px;
+}
+
+/* # = targeting id, . = targeting class */
+
+main > section {
+  padding: 20px;
+  background-color: white;
+  border: 4px solid tomato;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+  /* Goal: when website is tablet dimension, the main tag should change to have 3 columns */
+
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+/* Phone */
+@media screen and (max-width: 400px) {
+
+  main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}

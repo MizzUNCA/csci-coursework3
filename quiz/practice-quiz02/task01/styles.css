@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    height: 100vh;
+}
+
+section {
+    border: solid 4px orangered;
+    width: 200px;
+    height: 75px;
+}
+
+main { /*main is the parnet of the 5 elemetns we are trying to center*/
+    display: flex;
+    flex-direction: column; /*puts item in column since flex mode puts items horizontally default*/
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

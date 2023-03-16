@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+#mountains {
+    position: absolute;
+    width: 100vw;
+    bottom: 0vh;
+    left: 0;
+    z-index: 1;
+}
+
+#sun {
+    position: absolute;
+    color: #FF3300;
+    bottom: -10vh;
+    left: calc(50vw - 50px); 
+    font-size: 200px;
+    z-index: 0;
+
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: infinite;
+    animation-name: sunrise;
+    animation-delay: 1s;
+    animation-duration: 12s;
+    animation-direction: alternate;
+}
+
+@keyframes sunrise {
+    0% { 
+        transform: translate(0, 0);
+        color: #FF3300;
+        font-size: 150;
+    }
+    100% { 
+        transform: translate(0, -70vh); 
+        color: yellow;
+        font-size: 100px;
+    }
+}
+
+#cloud1 {
+    position: absolute;
+    color: #EEE;
+    top: 0px;
+    left: 0px;
+    font-size: 60px;
+    z-index: 3;
+    
+    /* Start by positioning the cloud to the left by 30vw */
+    transform: translate(-30vw, 0);
+
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-name: moveCloudHorizontally1;
+    animation-delay: 1s;
+    animation-duration: 18s;
+}
+
+#cloud2 {
+    position: absolute;
+    color: #EEE;
+    top: 0px;
+    left: 0px;
+    font-size: 140px;
+    z-index: 3;
+    
+    /* Start by positioning the cloud to the left by 30vw */
+    transform: translate(110vw, 0);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-name: moveCloudHorizontally2;
+    animation-delay: 1s;
+    animation-duration: 18s;
+}
+
+@keyframes moveCloudHorizontally1 {
+    0% { 
+        transform: translate(-30vw, 0);
+    }
+    100% { 
+        transform: translate(110vw, 0); 
+    }
+}
+
+@keyframes moveCloudHorizontally2 {
+    0% { 
+        transform: translate(110vw, 0);
+    }
+    100% { 
+        transform: translate(-50vw, 0); 
+    }
+}
+
+#sunset {
+    background-image: url("blackwallpaper.jpg");
+    animation-name: sunset;
+    animation-duration: 9s;
+    animation-delay: 9s;
+    z-index: 2;
+}
+
+@keyframes sunset {
+    0% {
+        opacity: 0.1;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+

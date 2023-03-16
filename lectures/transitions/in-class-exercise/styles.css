@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20vh 20vw;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-container section {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: #CCC;
+}
+
+
+#section1 {
+    background: #0c7474;
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+#section1:hover {
+    background: purple;
+    width: 220px;
+    height: 220px;
+}
+
+
+
+
+#section2 {
+    opacity: 0;
+    border: lightpink;
+    border-style: dotted;
+    border: 10px;
+    border-radius: 5px;
+ }
+#section2:hover { 
+    opacity: 1;
+    background-color: violet;
+    transition: all 1s ease-in-out;
+} 
+
+#section3 {
+    visibility: visible;
+ }
+#section3:hover {
+    visibility: hidden;
+ } 
+
+ .two-steps-2 {
+    background:
+      linear-gradient(currentColor 0 0) var(--p, 200%) 100% /50% 3px no-repeat,
+      linear-gradient(currentColor 0 0) 100% 100% /var(--d, 0) 3px no-repeat;
+    transition: 0.3s, background-position 0.3s 0.2s;
+  }
+  .two-steps-2:hover {
+    --d: 100%;
+    --p: 100%;
+    transition: 0.3s, background-size 0.3s 0.2s
+  }

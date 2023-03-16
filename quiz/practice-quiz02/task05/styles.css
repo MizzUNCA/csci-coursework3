@@ -1,0 +1,74 @@
+header, nav, aside, main, footer {
+    border: solid 4px orangered;
+    border-radius: 6px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+/* Your code here */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto; /* reccommended to not explicitally set heights, instead let child decide*/
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+nav {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    min-height: 70vh;
+}
+
+aside {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+footer {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+@media screen and (max-width: 800px) { 
+    body {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto auto auto; /* reccommended to not explicitally set heights, instead let child decide*/
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    nav {
+        grid-column: 1/3;
+    }
+
+    main {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        min-height: 55vh;
+    }
+    
+    aside {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    footer {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    
+}
