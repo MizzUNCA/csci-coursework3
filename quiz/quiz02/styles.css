@@ -30,11 +30,16 @@ header {
 }
 
 
-nav > a:link {
+/* nav > a:link {
 
     text-decoration: none;
-    color: white    ;
+    color: white;
 
+} */
+
+a:visited, a:hover, a:active, a:link {
+    text-decoration: none;
+    color: white;
 }
 
 nav > a{
@@ -67,19 +72,20 @@ h2 {
 .card {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    border: 1px solid black;
-    padding: 25px;
+    border: 1px solid lightgray;
+    padding: 10px;
     margin: 15px;
 }
 
 .card-info {
     grid-column: 1/2;
+    height: auto;
 }
 
 .card > img {
     grid-column: 2/3;
     width: 100%;
-    justify-content: flex-end;
+    height: auto;
 }
 
 .card {
@@ -99,5 +105,9 @@ h2 {
 
     nav {
         display: none;
+    }
+
+    .card > img {
+        width: 200px;
     }
 }
