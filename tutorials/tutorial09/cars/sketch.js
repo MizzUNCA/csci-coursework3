@@ -33,6 +33,13 @@ const c4 = {
     color: 'red'
 };
 
+const c5 = {
+    x: 100,
+    y: 750,
+    speed: 2,
+    fillColor: 'brown'
+}
+
 
 
 // required to set up the canvas:
@@ -55,6 +62,8 @@ function draw() {
 
     c4.x += c4.speed;
 
+    c5.x += c5.speed;
+
     if (c1.x > canvasWidth + 150) {
         c1.x = 0;
         c1.speed += 1; 
@@ -76,6 +85,11 @@ function draw() {
         c4.width += 10
     }
 
+    if (c5.x > canvasWidth + 150) {
+        c5.x = 100;
+        c4.color.speed += 2;
+    }
+
     
 
 
@@ -87,6 +101,8 @@ function draw() {
     drawCreature(c3.x, c3.y, c3.fillColor);
 
     drawCar(c4.x, c4.y, c4.width, c4.color);
+
+    drawFace(c5.x, c5.y, c5.fillColor);
 
     
     
@@ -115,9 +131,9 @@ function drawCreature(x, y, fillColor) {
     fill(fillColor);
     ellipse(x, y, 250, 300, 50); //x, y, w, h, extra
     //face
-    fill('black')
+    fill('black');
     ellipse(x, y - 159, 200, 75);
-    fill('black')
+    fill('black');
     curve(x - 1300, y - 750, x - 50, y + 50, x - 25, y + 125, x, y + 150, x - 25, y + 125);
     fill('black');
     strokeWeight(10);
@@ -126,4 +142,12 @@ function drawCreature(x, y, fillColor) {
     fill('black');
     point(x - 25, y -25, 1);
     // strokeWeight(10);
+}
+
+function drawFace(x, y, fillColor) {
+    fill(fillColor);
+    circle(x, y, 300)
+    fill('black');
+    ellipse(x - 50, y - 50, 30, 40)
+    ellipse(x + 50, y - 50, 30, 40)
 }
