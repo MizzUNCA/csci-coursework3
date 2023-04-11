@@ -68,3 +68,10 @@ triangle(
     70, 80  // third point
 )
 */
+
+// let fruit = [blah, blah, blah];
+// i = 0;
+// while(i < fruit.length) {
+//     console.log(fruit[i]);
+//     i++;
+// }
