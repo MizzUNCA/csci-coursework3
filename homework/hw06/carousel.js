@@ -12,7 +12,7 @@ const photos = [
     "images/img9-600x400.jpg",
     "images/img10-600x400.jpg"
 ];
-let idx = 0;
+let i = 0;
 
 
 /* This function should:
@@ -26,7 +26,7 @@ function showImage() {
     // photo[idx]
 
     let imageTemplate = `
-    <img  src="${photos[idx]}" alt="current photo" />
+    <img  src="${photos[i]}" alt="current photo" />
     `
     //Ask what the difference is, and if ;you need to include the div class or not
     // let imageTemplate = `
@@ -40,7 +40,7 @@ function showImage() {
     //         "beforebegin", `<img src="${photos[idx]}">`
     //     )
     let captionTemplate = `
-        <p class="caption">Image ${[idx + 1]} of 10</p>
+        <p class="caption">Image ${[i + 1]} of 10</p>
     `
     document.querySelector(".caption").innerHTML = captionTemplate;
     //document.querySelector('.caption').insertAdjacentHTML("beforeend", `<p>Image ${[idx]} of 10</p>`)
@@ -55,9 +55,9 @@ function showImage() {
 */
 function forward() {
     console.log('forward');
-    ++idx;
-    if(idx > photos.length - 1) {
-        idx = 0;
+    ++i;
+    if(i > photos.length - 1) {
+        i = 0;
     }
     showImage();
 }
@@ -71,9 +71,9 @@ function forward() {
 */
 function back() {
     console.log('back');
-    --idx;
-    if(idx < 0) {
-        idx = 9;
+    --i;
+    if(i < 0) {
+        i = 9;
     }
     showImage();
 }
