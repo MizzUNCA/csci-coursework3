@@ -28,15 +28,26 @@ function search() {
     console.log(data);
     console.log(data[0].Title);
     console.log(data[0].Instructors[0].Name);
+    document.querySelector('.courses').insertAdjacentHTML = '';
     //document.querySelector(".courses").innerHTML = data[0].Title + ' ' + data[0].Instructors[0].Name;
-    document.querySelector('.courses').innerHTML = `
-        <section class="course">
-        <h2>${[data[0].Title]}</h2>
-        <p>
-            ${[data[0].Days]} &bull; ${[data[0].Location[0]]} &bull; ${[data[0].Hours]} credit hour(s)
-        </p>
-        <p><strong>${[data[0].Instructors[0].Name]}</strong></p>
-        </section>
-    `
     const searchTerm = document.querySelector('#search_term').value;
+    for(i = 0; i < data.length; i++) {
+    let instructor = 'TBD';
+    if (data[i].Instructors.length > 0) {
+        instructor = data[i].Instructors[0].Name;
+    }
+    if (instructor.includes(searchTerm)) {
+        //lines of code that add something new to the DOM
+        document.querySelector('.courses').insertAdjacentHTML('beforeend', `
+            <section class="course">
+            <h2>${[data[i].Code]}; ${[data[i].Title]}</h2>
+            <p>
+                ${[data[i].Days]} &bull; ${[data[i].Location.FullLocation]} &bull; ${[data[i].Hours]} credit hour(s)
+            </p>
+            <p><strong>${[instructor]}</strong></p>
+            </section>
+            `);
+        }
+    }
+    //const searchTerm = document.querySelector('#search_term').value;
 }

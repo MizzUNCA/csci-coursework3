@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="p5.js" defer></script>
+    <script src="utilities.js" defer></script>
+    <script src="project.js" defer></script>
     <title>Mishko's Website</title>
     
     <style>
         body {
-          background-image: url('../images/yournamepc.jpg');
+          background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/Studio-Ghibli-HD-Wallpaper-Free-download.jpg');
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
@@ -21,7 +24,7 @@
         a:link {
             color: #BECDE4;;
             background-color: transparent;
-            text-decoration: none;
+            text-decoration: dotted;
         }
         a:visited {
             color: #BECDE4;
@@ -44,17 +47,41 @@
 
 <body>
     <header>
-         <div class="header">
-            <h1>Mishko's Website</h1>
-        </div>
+        <nav>
+                <li><a>All</a></li>
+                <li><a href="pages/completed.html">Completed</a></li>
+                <li><a href="pages/currentlyWatching.html">Currently Watching</a></li>
+                <li><a href="pages/onHold.html">On Hold</a></li>
+                <li><a href="pages/plannedWatch.html">Plan to Watch</a></li>
+                <li><a href="pages/dropped.html">Dropped</a></li>
+        </nav>
     </header>
     
-
-        <div class="container">
-          <div class="item homework"><h1><u><b>Homework</b></u></h1>
-              <p>yoooo</p>
-          </div>
-    </div>
+    <section id="projects">
+        <h1>All Shows</h1>
+        <div class="project-holder">
+            <section class="card1 card">
+                <img src="images/imagetest.jpg" alt="image description 1" />
+                <h3>Name of Project</h3>
+                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+            </section>
+            <section class="card2 card">
+                <img src="images/imagetest.jpg" alt="image description 2" />
+                <h3>Name of Project</h3>
+                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+            </section>
+            <section class="card3 card">
+                <img src="images/imagetest.jpg" alt="image description 3" />
+                <h3>Name of Project</h3>
+                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+            </section>
+            <section class="card4 card">
+                <img src="images/imagetest.jpg" alt="image description 4" />
+                <h3>Name of Project</h3>
+                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+            </section>
+        </div>
+    </section>
 </body>
 
 </html>

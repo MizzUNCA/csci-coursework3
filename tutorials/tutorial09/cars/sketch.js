@@ -49,7 +49,7 @@ function setup() {
 
 
 // animation loop:
-function draw() {
+function draw() {z
     // clear the canvas:
     clear();
 
