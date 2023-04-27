@@ -8,6 +8,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
     background: url(https://images7.alphacoders.com/325/thumb-1920-325547.jpg);
     background-size: cover;
     background-position: bottom;
@@ -22,11 +23,21 @@
     overflow: hidden;
 }
 
+#projects{
+    height: 100vh;
+    margin-top: -100vh;
+
+}
+
 .banner .clouds img {
     position: absolute;
-    bottom: 500px;
+    bottom: 750px;
     max-width: 100%;
     animation: animate calc(20s * var(--i)) linear infinite;
+}
+
+.clouds > img {
+    transform: rotate(180deg);
 }
 
 @keyframes animate {

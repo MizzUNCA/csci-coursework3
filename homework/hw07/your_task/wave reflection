@@ -1,0 +1,12 @@
+#1 Corrections made: The first corrections that I had to make for this homework was setting the HTML language to english, which was fairly simple because it was just one line of code at the top of my HTML. 
+The next fix that I had to make was adding an aria-label to the input at the top of the website, which wasn't hard either I had to look at the code and figure out the right place to put it. 
+The next few fixes that I had to make to this homework were adding alternative text to the various images of the artist, songs, and albums. 
+This was probably the most difficult fix because I forgot where I was supposed to put the alt text, but then I remember after a little bit that they were supposed to go after the img src tags.
+
+#2 Interface Functionality without mouse: While I was at first expecting that the entire interface would be functional without the use of a mouse, I was suprised to find out that this was not the case. 
+While you are able to use the search bar, artist, and albums with the 'tab' key, you are not actually able to access the songs portion of this website without the use of a mouse.
+This means that users who are unable to use a mouse would not be able to click the songs to listen to them.
+
+#3 Other accessibility features: As I brought up in the previous question, I was not able to get the songs column to be accesssed by users without the use of a mouse. 
+So, something that I would like to add the ability for users to be able to still use that feature of the website without having to use a mouse. 
+Besides that, the only other feature I would probably be interested in adding is changing the contrast of color so that users can have an easier time viewing the site. 
