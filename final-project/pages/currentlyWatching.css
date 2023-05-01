@@ -4,13 +4,9 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow: visible;
-    overflow-y: scroll;
-}
-
 nav {
-    z-index: 100000;
+    z-index: 1000;
+    position: relative;
 }
 
 .container2{
@@ -27,13 +23,27 @@ nav {
 
 h1 {
     text-shadow: 3px 3px black;
+    margin-top: -10vh;
   }
 
-/*Credit for flying bird animation: https://www.youtube.com/watch?v=BjrxFjp7dhA&ab_channel=ElC%C3%B3digo */
+/*Credit for flying bird animation: https://www.youtube.com/watch?v=ZWFM_Ad48uQ&ab_channel=CodingBuddies */
 
 #projects{
     height: 100vh;
+    z-index: 1000;
 
+}
+
+nav header {
+    overflow-y: hidden;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+#projects {
+    overflow-y: scroll;
 }
 
 h1 {
@@ -42,8 +52,8 @@ h1 {
 
 .bird-container, .bird-container2{
     position: fixed;
-    width: 10%;
-    height: 10%;
+    /* width: 10%;
+    height: 10%; */
     animation: animate-bird 4s linear infinite;
 }
 

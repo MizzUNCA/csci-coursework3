@@ -32,7 +32,7 @@ nav {
 /* Credit for firefly particle animation: https://www.youtube.com/watch?v=ajZjivqBdcY&t=4s&ab_channel=OnlineTutorials */
 
 .glowing {
-    position: relative;
+    position: fixed;
     min-width: 20vw;
     height: 20vh;
     margin: -150px;
@@ -71,12 +71,12 @@ nav {
 .glowing span:before {
     content: '';
     position: fixed;
-    top: 50%;
-    left: -8px;
-    width: 15px;
+    top: 10%;
+    left: 0px;
+    width: 5px;
     height: 15px;
     background: #f00;
-    border-radius: 50%;
+    border-radius: 20%;
 
 }
 

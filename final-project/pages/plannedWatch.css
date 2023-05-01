@@ -5,6 +5,11 @@
     
 }
 
+#projects{
+    height: 100vh;
+    z-index: 1000;
+}
+
 .banner{
     position: fixed;
     width: 100%;
