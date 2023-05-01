@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="styles.css">
     <script src="p5.js" defer></script>
     <script src="utilities.js" defer></script>
     <script src="project.js" defer></script>
     <title>Mishko's Website</title>
     
-    <style>
+    <!-- <style>
         body {
-          background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/Studio-Ghibli-HD-Wallpaper-Free-download.jpg');
+          background-image: url('https://studioghiblimovies.com/wp-content/uploads/2019/02/d78b1219f9991c69a7619d362548cb79f4d29e02_hq2.jpg');
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
         }
-	</style>
+	</style> -->
 
     <style>
         a:link {
@@ -37,7 +38,7 @@
             text-decoration: wavy;
         }
         a:active {
-            color: #0D3155;
+            color: #BECDE4;
             background-color: transparent;
             text-decoration: underline;
         }
@@ -46,9 +47,11 @@
 </head>
 
 <body>
+    <script src="main.js"></script>
+
     <header>
         <nav>
-                <li><a>All</a></li>
+                <li style="color:white;"><a><u>All</u></a></li>
                 <li><a href="pages/completed.html">Completed</a></li>
                 <li><a href="pages/currentlyWatching.html">Currently Watching</a></li>
                 <li><a href="pages/onHold.html">On Hold</a></li>
@@ -56,29 +59,220 @@
                 <li><a href="pages/dropped.html">Dropped</a></li>
         </nav>
     </header>
+
+    <section id="rain"></section>
     
     <section id="projects">
-        <h1>All Shows</h1>
+        <h1 style="color: royalblue">All Shows</h1>
         <div class="project-holder">
             <section class="card1 card">
-                <img src="images/imagetest.jpg" alt="image description 1" />
-                <h3>Name of Project</h3>
-                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+                <img src="https://cdn.myanimelist.net/images/anime/6/82898.jpg" alt="image description 1" />
+                <h3>3-gatsu no Lion</h3>
+                <h4>Rating: 8.38</h4>
             </section>
             <section class="card2 card">
-                <img src="images/imagetest.jpg" alt="image description 2" />
-                <h3>Name of Project</h3>
-                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+                <img src="https://cdn.myanimelist.net/images/anime/1244/111115.jpg" alt="image description 2" />
+                <h3>Angel Beats!</h3>
+                <h4>Rating: 8.06</h4>
             </section>
             <section class="card3 card">
-                <img src="images/imagetest.jpg" alt="image description 3" />
-                <h3>Name of Project</h3>
-                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+                <img src="https://cdn.myanimelist.net/images/anime/11/75274.jpg" alt="image description 3" />
+                <h3>Bakemonogatari</h3>
+                <h4>Rating: 8.33</h4>
             </section>
             <section class="card4 card">
-                <img src="images/imagetest.jpg" alt="image description 4" />
-                <h3>Name of Project</h3>
-                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+                <img src="https://cdn.myanimelist.net/images/anime/1122/96435.jpg" alt="image description 4" />
+                <h3>Koe no Katachi</h3>
+                <h4>Rating: 8.94</h4>
+            </section>
+
+            <section class="card5 card">
+                <img src="https://cdn.myanimelist.net/images/anime/13/17405.jpg" alt="image description 5" />
+                <h3>Naruto</h3>
+                <h4>Rating: 7.98</h4>
+            </section>
+            <section class="card6 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1084/128208.jpg" alt="image description 6" />
+                <h3>Zombieland Saga</h3>
+                <h4>Rating: 7.51</h4>
+            </section>
+            <section class="card7 card">
+                <img src="https://cdn.myanimelist.net/images/anime/9/76493.jpg" alt="image description 7" />
+                <h3>Rakudai Kishi no Cavalry</h3>
+                <h4>Rating: 7.45</h4>
+            </section>
+            <section class="card8 card">
+                <img src="https://cdn.myanimelist.net/images/anime/3/67177.jpg" alt="image description 8" />
+                <h3>Shigatsu wa Kimi no Uso</h3>
+                <h4>Rating: 8.65</h4>
+            </section>
+
+            <section class="card9 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1820/120520.jpg" alt="image description 9" />
+                <h3>Akebi-chan no Sailor-fuku</h3>
+                <h4>Rating: 7.70</h4>
+            </section>
+            <section class="card10 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1975/121513.jpg" alt="image description 10" />
+                <h3>Kaijin Kaihatsu-bu no Kuroitsu-san</h3>
+                <h4>Rating: 6.73</h4>
+            </section>
+            <section class="card11 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1812/134736.jpg" alt="image description 11" />
+                <h3>Oshi no Ko</h3>
+                <h4>Rating: 9.09</h4>
+            </section>
+            <section class="card12 card">
+                <img src="https://cdn.myanimelist.net/images/anime/6/73245.jpg" alt="image description 12" />
+                <h3>One Piece</h3>
+                <h4>Rating: 8.69</h4>
+            </section>
+
+            <section class="card13 card">
+                <img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" alt="image description 13" />
+                <h3>Shingeki no Kyojin</h3>
+                <h4>Rating: 8.53</h4>
+            </section>
+            <section class="card14 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1449/117797.jpg" alt="image description 14" />
+                <h3>Takt Op. Destiny</h3>
+                <h4>Rating: 7.15</h4>
+            </section>
+            <section class="card15 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1033/118296.jpg" alt="image description 15" />
+                <h3>Tensei shitara Slime Datta Ken 2nd Season</h3>
+                <h4>Rating: 8.33</h4>
+            </section>
+            <section class="card16 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1010/124180.jpg" alt="image description 16" />
+                <h3>Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 2nd Season</h3>
+                <h4>Rating: 8.14</h4>
+            </section>
+
+            <section class="card17 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1820/120520.jpg" alt="image description 17" />
+                <h3>Akebi-chan no Sailor-fuku</h3>
+                <h4>Rating: 7.70</h4>
+            </section>
+            <section class="card18 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1975/121513.jpg" alt="image description 18" />
+                <h3>Kaijin Kaihatsu-bu no Kuroitsu-san</h3>
+                <h4>Rating: 6.73</h4>
+            </section>
+            <section class="card19 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1812/134736.jpg" alt="image description 19" />
+                <h3>Oshi no Ko</h3>
+                <h4>Rating: 9.09</h4>
+            </section>
+            <section class="card20 card">
+                <img src="https://cdn.myanimelist.net/images/anime/6/73245.jpg" alt="image description 20"/>
+                <h3>One Piece</h3>
+                <h4>Rating: 8.69</h4>
+            </section>
+
+            <section class="card21 card">
+                <img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" alt="image description 21" />
+                <h3>Shingeki no Kyojin</h3>
+                <h4>Rating: 8.53</h4>
+            </section>
+            <section class="card22 card">
+                <img src="https://cdn.myanimelist.net/images/anime/10/18793.jpg" alt="image description 22" />
+                <h3>Monster</h3>
+                <h4>Rating: 8.86</h4>
+            </section>
+            <section class="card23 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1033/118296.jpg" alt="image description 23" />
+                <h3>Tensei shitara Slime Datta Ken 2nd Season</h3>
+                <h4>Rating: 8.33</h4>
+            </section>
+            <section class="card24 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1010/124180.jpg" alt="image description 24" />
+                <h3>Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 2nd Season</h3>
+                <h4>Rating: 8:14</h4>
+            </section>
+
+            <section class="card25 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1500/103005.jpg" alt="image description 25" />
+                <h3>Vinland Saga</h3>
+                <h4>Rating: 8.74/h4>
+            </section>
+            <section class="card26 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg" alt="image description 26" />
+                <h3>Demon Slayer: Kimetsu no Yaiba</h3>
+                <h4>Rating: 8.51</h4>
+            </section>
+            <section class="card27 card">
+                <img src="https://cdn.myanimelist.net/images/anime/12/83709.jpg" alt="image description 27"/>
+                <h3>Masamune-kun no Revenge</h3>
+                <h4>Rating: 6.74</h4>
+            </section>
+            <section class="card28 card">
+                <img src="https://cdn.myanimelist.net/images/anime/4/72750.jpg" alt="image description 28" />
+                <h3>Plastic Memories</h3>
+                <h4>Rating: 7.91</h4>
+            </section>
+
+            <section class="card29 card">
+                <img src="https://cdn.myanimelist.net/images/anime/13/22128.jpg" alt="image description 29" />
+                <h3>Toradora!</h3>
+                <h4>Rating: 8.08</h4>
+            </section>
+            <section class="card30 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1795/95088.jpg" alt="image description 30" />
+                <h3>Violet Evergarden</h3>
+                <h4>Rating: 8.67</h4>
+            </section>
+            <section class="card31 card">
+                <img src="https://cdn.myanimelist.net/images/anime/2/73700.jpg" alt="image description 31" />
+                <h3>Yamada-kun to 7-nin no Majo</h3>
+                <h4>Rating: 7.55</h4>
+            </section>
+            <section class="card32 card">
+                <img src="https://cdn.myanimelist.net/images/anime/5/83937.jpg" alt="image description 32" />
+                <h3>Kuzu no Honkai</h3>
+                <h4>Rating: 7.15</h4>
+            </section>
+
+            <section class="card33 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1448/127956.jpg" alt="image description 33" />
+                <h3>Bocchi the Rock!</h3>
+                <h4>Rating: 8.88</h4>
+            </section>
+            <section class="card34 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1670/130060.jpg" alt="image description 34" />
+                <h3>Kaguya-sama wa Kokurasetai: First Kiss wa Owaranai</h3>
+                <h4>Rating: 8.91</h4>
+            </section>
+            <section class="card35 card">
+                <img src="https://cdn.myanimelist.net/images/anime/5/87048.jpg" alt="image description 35" />
+                <h3>Kimi no Na wa.</h3>
+                <h4>Rating: 8.85/h4>
+            </section>
+            <section class="card36 card">
+                <img src="https://cdn.myanimelist.net/images/anime/6/79597.jpg" alt="image description 36" />
+                <h3>Spirited Away</h3>
+                <h4>Rating: 8.78</h4>
+            </section>
+
+            <section class="card37 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1258/126929.jpg" alt="image description 37" />
+                <h3>Blue Lock</h3>
+                <h4>Rating: 8.37</h4>
+            </section>
+            <section class="card38 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1135/114867.jpg" alt="image description 38" />
+                <h3>Link Click</h3>
+                <h4>Rating: 8.74</h4>
+            </section>
+            <section class="card39 card">
+                <img src="https://cdn.myanimelist.net/images/anime/1530/117776.jpg" alt="image description 39" />
+                <h3>Mushoku Tensei: Jobless Reincarnation</h3>
+                <h4>Rating: 8.38</h4>
+            </section>
+            <section class="card40 card">
+                <img src="https://cdn.myanimelist.net/images/anime/3/88293.jpg" alt="image description 40" />
+                <h3>Houseki no Kuni: Land of the Lustrous</h3>
+                <h4>Rating: 8:39</h4>
             </section>
         </div>
     </section>

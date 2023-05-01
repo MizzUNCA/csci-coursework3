@@ -1,0 +1,60 @@
+/* Credit for rain animation: https://www.youtube.com/watch?v=UuGyvCYWI3I&t=3s*/
+
+#projects{
+    height: 100vh;
+    margin-top: -10vh;
+}
+
+#rain {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url("https://studioghiblimovies.com/wp-content/uploads/2019/02/d78b1219f9991c69a7619d362548cb79f4d29e02_hq2.jpg");
+    background-size: cover;
+    overflow: visible;
+    z-index: -10000;
+}
+
+nav {
+    z-index: 1000000;
+}
+
+h1 {
+    text-shadow: 3px 3px black;
+  }
+
+#rain:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/rain.png);
+    animation: rain 0.325s linear infinite;
+    z-index: -100000;
+}
+
+@keyframes rain
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 10% 50%;
+    }
+    100%
+    {
+        background-position: 20% 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #rain {
+        overflow: hidden;
+    }
+
+}

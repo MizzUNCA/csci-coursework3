@@ -4,26 +4,44 @@
     box-sizing: border-box;
 }
 
-.container{
+body {
+    overflow: visible;
+    overflow-y: scroll;
+}
+
+nav {
+    z-index: 100000;
+}
+
+.container2{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    position: fixed;
     background-image: url("https://images.squarespace-cdn.com/content/v1/54fc8146e4b02a22841f4df7/1498656955767-OXXU29IQE0E26TT41TDK/kikis-delivery-service-510353d0e522c.jpg");
     background-position: center;
-    background-repeat: no-repeat;
+    background-position-x: center;
+    background-repeat: repeat;
     background-size: cover;
-    position: relative;
     
 }
 
+h1 {
+    text-shadow: 3px 3px black;
+  }
+
+/*Credit for flying bird animation: https://www.youtube.com/watch?v=BjrxFjp7dhA&ab_channel=ElC%C3%B3digo */
+
 #projects{
     height: 100vh;
-    margin-top: -100vh;
 
 }
 
+h1 {
+    opacity: 0.99;
+}
+
 .bird-container, .bird-container2{
-    position: absolute;
+    position: fixed;
     width: 10%;
     height: 10%;
     animation: animate-bird 4s linear infinite;
@@ -73,4 +91,17 @@
     100% {
         transform: translate(1200px, -100px) scale(0.1) rotate(0deg);
     }
+}
+
+@media screen and (max-width: 800px) {
+
+    .container2 {
+        overflow: auto;
+    }
+
+    nav {
+        justify-content: center;
+        align-items: center;
+    }
+
 }
