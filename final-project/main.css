@@ -12,7 +12,7 @@
     background: url("https://studioghiblimovies.com/wp-content/uploads/2019/02/d78b1219f9991c69a7619d362548cb79f4d29e02_hq2.jpg");
     background-size: cover;
     overflow: visible;
-    z-index: -10000;
+    z-index: -100000000;
 }
 
 nav {
@@ -33,7 +33,7 @@ h1 {
     height: 100%;
     background: url(images/rain.png);
     animation: rain 0.325s linear infinite;
-    z-index: -100000;
+    z-index: -1000000;
 }
 
 @keyframes rain
