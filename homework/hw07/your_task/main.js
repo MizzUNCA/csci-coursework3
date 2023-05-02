@@ -16,7 +16,7 @@ async function getAlbums (term) {
 
     document.querySelector('#albums').innerHTML = "";
 
-    const url = `https://api.jikan.moe/v4/anime?q=${term}`
+    const url = `https://www.apitutor.org/spotify/simple/v1/search?type=album&q=${term}`
     const data = await fetch(url).then(response => response.json());
     console.log(data);
 
@@ -24,12 +24,12 @@ async function getAlbums (term) {
         for(i = 0; i < data.length; i++) {
             const album = data[i];
             const template = `
-            <section class="album-card" id="${[album.data.mal_id]}">
+            <section class="album-card" id="${[album.id]}">
             <div>
-                <img src="${[album.data.images.jpg]}" alt="${[album.data.title]}, album">
-                <h2>${[album.data.title]}</h2>
+                <img src="${[album.image_url]}" alt="${[album.name]}, album">
+                <h2>${[album.name]}</h2>
                 <div class="footer">
-                    <a href="${[album.data.url]}" target="_blank">
+                    <a href="${[album.spotify_url]}" target="_blank">
                         view on spotify
                     </a>
                 </div>
